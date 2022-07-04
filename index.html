@@ -6,12 +6,17 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
-    <div class="container">
+<body id="body">
+    <div class="container" id="container">
 
         <h1 class="title">
             <a href="index.html">Hoja De vida</a>
         </h1>
+        <div class="button-color">
+            <button class="color-verde" onclick={verde()}>Verde</button>
+            <button class="color-purpura" onclick={purpura()}>Purpura</button>
+            <button class="color-gris" onclick={gris()}>Gris</button>
+        </div>
         <nav>
             <ul>
                 <li><a href="referencias-personales.html">Referencia Personales</a></li>
@@ -37,7 +42,7 @@
             </a>
         </div>
     </div>
-
+<script src="./index.js"></script>
 </body>
 
 </html>

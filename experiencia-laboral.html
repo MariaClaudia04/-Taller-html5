@@ -6,12 +6,17 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
-    <div class="container">
+<body id="body">
+    <div class="container" id="container">
 
         <h1 class="title">
             <a href="index.html">Hoja De vida</a>
         </h1>
+        <div class="button-color">
+            <button class="color-verde" onclick={verde()}>Verde</button>
+            <button class="color-purpura" onclick={purpura()}>Purpura</button>
+            <button class="color-gris" onclick={gris()}>Gris</button>
+        </div>
         <nav>
             <ul>
                 <li><a href="experiencia-laboral.html">Experiencia Laboral</a></li>
@@ -22,21 +27,32 @@
         </nav>
         <section>
             <h1>Experiencia Laboral</h1>
+
             <p>
             <ul>
-                <li>
-                    Vendedora en almacen laura
-                </li>
-                <li>
-                    Vendedora en supermercado
-                </li>
-                <li>
-                    Vendedora en panaderia
-                </li>
+                <button class="accordion">Experiencia  1</button>
+                <div class="reference">
+                    <li>
+                        Vendedora en almacen laura
+                    </li>
+                </div>
+                <button class="accordion">Experiencia  2</button>
+                <div class="reference">
+                    <li>
+                        Vendedora en supermercado
+                    </li>
+                </div>
+                <button class="accordion">Experiencia  3</button>
+                <div class="reference">
+                    <li>
+                        Vendedora en panaderia
+                    </li>
+                </div>
             </ul>
             </p>
         </section>
     </div>
+<script src="./index.js"></script>
 </body>
 
 </html>

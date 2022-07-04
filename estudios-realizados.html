@@ -5,12 +5,17 @@
     <title>Estudios Realizados</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <div class="container">
+<body id="body">
+    <div class="container" id="container">
     
         <h1 class="title">
             <a href="index.html">Hoja De vida</a>
         </h1>
+        <div class="button-color">
+            <button class="color-verde" onclick={verde()}>Verde</button>
+            <button class="color-purpura" onclick={purpura()}>Purpura</button>
+            <button class="color-gris" onclick={gris()}>Gris</button>
+        </div>
         <nav>
             <ul>
                 <li><a href="experiencia-laboral.html">Experiencia Laboral</a></li>
@@ -23,21 +28,28 @@
         <section>
         
             <h1>Estudios realizados </h1>
+            <button class="accordion">Estudios realizados 1</button>
+            <div class="reference">
             <p>
                 <h4>
                     Tecnologia en desarrollo de software
                 </h4>
                 Año: 2020 - 2023
             </p>
+            </div>
+            <button class="accordion">Estudios realizados 2</button>
+            <div class="reference">
             <p>
                 <h4>
                      Bachiller Academico    
                 </h4>
                 Año Finalizacion: 2019
             </p>
+            </div>
             
     
         </section>
     </div>
+<script src="./index.js"></script>
 </body>
 </html>

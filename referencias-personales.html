@@ -6,12 +6,17 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
-    <div class="container">
+<body id="body">
+    <div class="container" id="container">
 
         <h1 class="title">
             <a href="index.html">Hoja De vida</a>
         </h1>
+        <div class="button-color">
+            <button class="color-verde" onclick={verde()}>Verde</button>
+            <button class="color-purpura" onclick={purpura()}>Purpura</button>
+            <button class="color-gris" onclick={gris()}>Gris</button>
+        </div>
         <nav>
             <ul>
                 <li><a href="experiencia-laboral.html">Experiencia Laboral</a></li>
@@ -21,22 +26,32 @@
             </ul>
         </nav>
         <section>
-
             <h1>Referencia personales</h1>
-            <p>
-                Nombre:Lorena Muñoz <br>
-                Telefono:3113104543
-            </p>
-            <p>
-                Nombre: Valentina Londoño <br>
-                Telefono:350528244
-            </p>
-            <p>
-                Nombre: Yeison Perez <br>
-                Telefono:3188704965
-            </p>
+            <button class="accordion">Referencia 1</button>
+            <div class="reference">
+                <p>
+                    Nombre:Lorena Muñoz <br>
+                    Telefono:3113104543
+                </p>
+            </div>
+            <button class="accordion">Referencia 2</button>
+            <div class="reference">
+                <p>
+                    Nombre: Valentina Londoño <br>
+                    Telefono:350528244
+                </p>
+            </div>
+            <button class="accordion">Referencia 3</button>
+            <div class="reference">
+
+                <p>
+                    Nombre: Yeison Perez <br>
+                    Telefono:3188704965
+                </p>
+            </div>
         </section>
     </div>
+    <script src="./index.js"></script>
 </body>
 
 </html>

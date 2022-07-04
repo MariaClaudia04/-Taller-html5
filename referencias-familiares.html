@@ -6,12 +6,17 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
-    <div class="container">
+<body id="body">
+    <div class="container" id="container">
 
         <h1 class="title">
             <a href="index.html">Hoja De vida</a>
         </h1>
+        <div class="button-color">
+            <button class="color-verde" onclick={verde()}>Verde</button>
+            <button class="color-purpura" onclick={purpura()}>Purpura</button>
+            <button class="color-gris" onclick={gris()}>Gris</button>
+        </div>
         <nav>
             <ul>
                 <li><a href="experiencia-laboral.html">Experiencia Laboral</a></li>
@@ -23,22 +28,35 @@
         <section>
 
             <h1>Referencias Familiares </h1>
-            <p>
-                Madre: Maria Cristina Londoño <br>
-                Telefono: 3207107566
-            </p>
-            <p>
-                Hermano1: Santiago Londoño <br>
-                Telefono:3137908877
-            </p>
-            <p>
-                Padre: Luis Emilio Sucerquia <br>
-                Telefono:3147448362
-            </p>
+            <button class="accordion">Referencia 1</button>
+            <div class="reference">
+
+
+                <p>
+                    Madre: Maria Cristina Londoño <br>
+                    Telefono: 3207107566
+                </p>
+            </div>
+            <button class="accordion">Referencia 2</button>
+            <div class="reference">
+                <p>
+                    Hermano1: Santiago Londoño <br>
+                    Telefono:3137908877
+                </p>
+            </div>
+            <button class="accordion">Referencia 3</button>
+            <div class="reference">
+                <p>
+                    Padre: Luis Emilio Sucerquia <br>
+                    Telefono:3147448362
+                </p>
+            </div>
 
 
         </section>
     </div>
+<script src="./index.js"></script>
+
 </body>
 
 </html>
